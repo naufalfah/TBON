@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBON - The Beauty Of Nusantara</title>
+    <meta name="description"
+        content="Discover the beauty of Indonesia. Explore top destinations like Bali, Borobudur, and Labuan Bajo.">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.png" alt="Nusantara Travel" id="navbarLogo">
+                <span class="brand-text blck">TBON</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-center text-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDaerah" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Eksplorasi Daerah
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-3"
+                            aria-labelledby="navbarDropdownDaerah">
+                            <li><a class="dropdown-item rounded-3 mb-1" href="daerah/sumatera/sumatera.html">Sumatera</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="daerah/jawa/jawa.html">Jawa</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="daerah/bali-nusa-tenggara/bali-nusa-tenggara.html">Bali & Nusa Tenggara</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="daerah/kalimantan/kalimantan.html">Kalimantan</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="daerah/sulawesi/sulawesi.html">Sulawesi</a></li>
+                            <li><a class="dropdown-item rounded-3" href="daerah/papua-maluku/papua-maluku.html">Papua & Maluku</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBudaya" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Warisan Budaya
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-3"
+                            aria-labelledby="navbarDropdownBudaya">
+                            <li><a class="dropdown-item rounded-3 mb-1" href="#">Adat & Tradisi</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="#">Seni Pertunjukan</a></li>
+                            <li><a class="dropdown-item rounded-3" href="#">Kuliner Nusantara</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Agenda Festival</a></li>
+                    <!-- Visible only on mobile inside collapse -->
+                    <li class="nav-item d-lg-none mt-3">
+                        <a class="btn btn-premium text-dark border-dark" href="#destinations">Jelajahi Sekarang</a>
+                    </li>
+                </ul>
+                <!-- Visible only on desktop -->
+                <div class="d-none d-lg-block">
+                    <a class="btn btn-premium" href="#destinations">Jelajahi Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-slideshow">
+            <img src="img/culture_kecak.png" alt="Kecak Dance" class="hero-img active">
+            <img src="img/culture_batik.png" alt="Batik Artisan" class="hero-img">
+            <img src="img/borobudur.png" alt="Borobudur Temple" class="hero-img">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80"
+                alt="Balinese Culture" class="hero-img">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">The Beauty Of Nusantara</h1>
+            <p class="hero-subtitle">EXPERIENCE THE EXTRAORDINARY JOURNEY</p>
+            <a href="#destinations" class="btn btn-premium">Mulai Penjelajahan</a>
+        </div>
+    </header>
+
+    <!-- Destination Section -->
+    <section id="destinations" class="py-5">
+        <div class="container py-5">
+            <h2 class="section-title">Top Destinations</h2>
+            <div class="row">
+                <!-- Borobudur -->
+                <div class="col-md-4">
+                    <div class="dest-card">
+                        <img src="img/borobudur.png" alt="Borobudur Temple">
+                        <div class="dest-card-overlay">
+                            <h3 class="dest-card-title">Borobudur</h3>
+                            <p class="dest-card-location"><i class="fas fa-map-marker-alt"></i> Central Java</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- West Sumatra -->
+                <div class="col-md-4">
+                    <div class="dest-card">
+                        <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80"
+                            alt="Traditional Architecture">
+                        <div class="dest-card-overlay">
+                            <h3 class="dest-card-title">Traditional Villages</h3>
+                            <p class="dest-card-location"><i class="fas fa-map-marker-alt"></i> Tana Toraja & Sumatra
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bali Culture -->
+                <div class="col-md-4">
+                    <div class="dest-card">
+                        <img src="img/culture_kecak.png" alt="Kecak Dance">
+                        <div class="dest-card-overlay">
+                            <h3 class="dest-card-title">Cultural Arts</h3>
+                            <p class="dest-card-location"><i class="fas fa-map-marker-alt"></i> Bali & Beyond</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Nusantara Section -->
+    <section class="py-5 bg-white overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title text-start mb-4">Mengapa Menjelajahi Nusantara?</h2>
+                    <p class="lead">Indonesia adalah mosaik budaya yang hidup. Setiap pulau menyimpan warisan tak
+                        ternilai yang mencerminkan kedalaman sejarah dan kearifan lokal.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-4 d-flex align-items-start">
+                            <div class="cultural-icon-box me-3 bg-gold">
+                                <i class="fas fa-monument"></i>
+                            </div>
+                            <span><strong>Warisan Leluhur:</strong> Candi megah dan situs sejarah yang mendunia.</span>
+                        </li>
+                        <li class="mb-4 d-flex align-items-start">
+                            <div class="cultural-icon-box me-3 bg-gold">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <span><strong>Keberagaman Adat:</strong> Ribuan suku dengan filosofi hidup yang unik.</span>
+                        </li>
+                        <li class="mb-4 d-flex align-items-start">
+                            <div class="cultural-icon-box me-3 bg-gold">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span><strong>Seni Nusantara:</strong> Batik, wayang, dan ukiran tangan yang
+                                artistik.</span>
+                        </li>
+                        <li class="mb-4 d-flex align-items-start">
+                            <div class="cultural-icon-box me-3 bg-gold">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <span><strong>Kuliner Autentik:</strong> Rempah asli yang memikat cita rasa dunia.</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-premium mt-4 text-dark border-dark">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="img/culture_batik.png" class=" img-fluid rounded-4 shadow"
+                                style="aspect-ratio: 3/4.5;" alt="Batik Art">
+                        </div>
+                        <div class="col-6 pt-5">
+                            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=600&q=80"
+                                class="img-fluid rounded-4 shadow" alt="Balinese Dance">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Brand Info -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="brand-circle me-3">
+                            <img src="img/logo.png" width="45px" height="45px" alt="">
+                        </div>
+                        <div>
+                            <h4 class="mb-0 fw-bold">TBON TRAVEL</h4>
+                            <small class="text-white-50">The Beauty Of Nusantara</small>
+                        </div>
+                    </div>
+                    <p class="text-white-50 lh-lg">Portal perjalanan terbaik untuk menjelajahi keindahan budaya dan alam
+                        Indonesia. Kami menghadirkan pengalaman tak terlupakan melalui warisan Nusantara yang autentik.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 mb-5 mb-lg-0 px-lg-5">
+                    <h5 class="fw-bold mb-4">Tautan Cepat</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#">Agenda Festival</a></li>
+                        <li><a href="#">Tentang Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Kontak</h5>
+                    <ul class="contact-info-list list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-map-marker-alt mt-1 me-3 text-accent-white"></i>
+                            <span class="text-white-50">Jl. Raya Nusantara No. 123, Jakarta Selatan, DKI Jakarta</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-phone-alt me-3 text-accent-white"></i>
+                            <span class="text-white-50">(021) 8888-9999</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-envelope me-3 text-accent-white"></i>
+                            <span class="text-white-50">info@tbon-travel.id</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-globe me-3 text-accent-white"></i>
+                            <span class="text-white-50">www.tbon-travel.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="copyright-bar mt-5 pt-4 d-flex justify-content-center align-items-center">
+                <p class="mb-0 text-white-50">&copy; 2026 TBON Nusantara Travel. Hak Cipta Dilindungi.</p>
+                <div style="width: 30px;"></div> <!-- Spacer for centering balance -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

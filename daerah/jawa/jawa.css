@@ -1,0 +1,571 @@
+/* ============================================
+   jawa PAGE - Premium Styles
+   ============================================ */
+
+/* --- Hero Banner --- */
+.jawa-hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+}
+
+.jawa-hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    animation: heroZoom 25s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.08); }
+}
+
+.jawa-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(15, 23, 42, 0.55) 0%,
+        rgba(15, 23, 42, 0.25) 40%,
+        rgba(15, 23, 42, 0.5) 70%,
+        rgba(15, 23, 42, 0.85) 100%
+    );
+    z-index: 1;
+}
+
+.jawa-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.jawa-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.3s;
+}
+
+.jawa-breadcrumb a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.jawa-breadcrumb a:hover {
+    color: #D4AF37;
+}
+
+.jawa-breadcrumb span {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.jawa-breadcrumb .active {
+    color: #D4AF37;
+    font-weight: 700;
+}
+
+.jawa-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+.jawa-hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    color: rgba(255, 255, 255, 0.85);
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.7s;
+}
+
+.jawa-hero-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 0.9s;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: rgba(212, 175, 55, 0.2);
+    border-color: rgba(212, 175, 55, 0.4);
+    transform: translateY(-3px);
+}
+
+.stat-item i {
+    color: #D4AF37;
+    font-size: 1rem;
+}
+
+.hero-scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: bounceDown 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounceDown {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(10px); }
+}
+
+/* --- Section Badge --- */
+.section-badge {
+    display: inline-block;
+    padding: 8px 22px;
+    background: linear-gradient(135deg, rgba(86, 190, 151, 0.12), rgba(212, 175, 55, 0.12));
+    color: #56BE97;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 1px solid rgba(86, 190, 151, 0.2);
+    margin-bottom: 1.2rem;
+}
+
+.section-desc {
+    color: #64748b;
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* --- Province Grid --- */
+.jawa-provinces {
+    padding: 50px 0;
+    background: white;
+}
+
+.province-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.province-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.province-card.province-wide {
+    grid-column: span 3;
+    aspect-ratio: 3 / 1;
+}
+
+.province-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.province-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+.province-card:hover img {
+    transform: scale(1.1);
+}
+
+.province-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        transparent 100%
+    );
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 65%;
+}
+
+.province-tag {
+    display: inline-block;
+    padding: 5px 14px;
+    background: rgba(212, 175, 55, 0.85);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    width: fit-content;
+    backdrop-filter: blur(5px);
+}
+
+.province-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.province-desc {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin-bottom: 8px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease 0.1s;
+}
+
+.province-card:hover .province-desc {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.province-meta {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease 0.2s;
+}
+
+.province-card:hover .province-meta {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.province-meta i {
+    color: #D4AF37;
+    margin-right: 4px;
+}
+
+/* --- Explore Other Destinations --- */
+.explore-other {
+    padding: 50px 0;
+    background: #e8eaec;
+}
+
+.other-dest-card {
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 280px;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s ease;
+}
+
+.other-dest-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.other-dest-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.other-dest-card:hover img {
+    transform: scale(1.08);
+}
+
+.other-dest-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    color: white;
+}
+
+.other-dest-overlay h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.other-dest-overlay span {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1200px) {
+    .province-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .jawa-hero-title {
+        font-size: 3.5rem;
+    }
+
+    .jawa-hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .jawa-hero-stats {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .stat-item {
+        padding: 10px 18px;
+        font-size: 0.8rem;
+    }
+
+    .jawa-intro {
+        padding: 70px 0;
+    }
+
+    .gallery-accent {
+        width: 150px;
+        height: 200px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .gallery-badge {
+        left: 0;
+        top: 40px;
+    }
+
+    .gallery-main img {
+        height: 400px;
+    }
+
+    .jawa-provinces {
+        padding: 40px 0;
+    }
+
+    .province-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .province-card.province-wide {
+        grid-column: span 2;
+        aspect-ratio: 2 / 1;
+    }
+
+    .province-name {
+        font-size: 1.3rem;
+    }
+
+    .province-desc {
+        opacity: 1;
+        transform: none;
+    }
+
+    .province-meta {
+        opacity: 1;
+        transform: none;
+    }
+
+    .cta-title {
+        font-size: 2.2rem;
+    }
+
+    .explore-other {
+        padding: 70px 0;
+    }
+
+    .other-dest-card {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .province-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .jawa-hero-title {
+        font-size: 2.8rem;
+    }
+
+    .jawa-hero-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .jawa-breadcrumb {
+        font-size: 0.75rem;
+        gap: 6px;
+    }
+
+    .intro-gallery {
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    .gallery-main img {
+        height: 320px;
+    }
+
+    .gallery-accent {
+        width: 130px;
+        height: 170px;
+    }
+
+    .gallery-badge {
+        padding: 15px 20px;
+    }
+
+    .badge-number {
+        font-size: 1.4rem;
+    }
+
+    .cta-title {
+        font-size: 1.8rem;
+    }
+
+    .cta-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .jawa-hero-title {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+
+    .jawa-hero-subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 1.5rem;
+    }
+
+    .jawa-hero-stats {
+        gap: 8px;
+    }
+
+    .stat-item {
+        padding: 8px 14px;
+        font-size: 0.72rem;
+        gap: 6px;
+    }
+
+    .hero-scroll-indicator {
+        display: none;
+    }
+
+    .section-badge {
+        font-size: 0.7rem;
+        padding: 6px 16px;
+    }
+
+    .province-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .province-card {
+        border-radius: 12px;
+    }
+
+    .province-name {
+        font-size: 1.1rem;
+    }
+
+    .province-overlay {
+        padding: 20px;
+    }
+
+    .other-dest-card {
+        height: 200px;
+    }
+
+    .other-dest-overlay h4 {
+        font-size: 1.2rem;
+    }
+
+    .gallery-badge {
+        left: 10px;
+        top: 30px;
+    }
+}

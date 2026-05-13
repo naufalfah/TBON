@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBON - Eksplorasi Sumatera</title>
+    <meta name="description"
+        content="Jelajahi keindahan Pulau Sumatera. Temukan 10 provinsi menakjubkan dari Aceh hingga Lampung dengan kekayaan alam dan budaya yang luar biasa.">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="sumatera.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+                <img src="../../img/logo.png" alt="Nusantara Travel" id="navbarLogo">
+                <span class="brand-text blck">TBON</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-center text-center">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#home">Beranda</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDaerah" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Eksplorasi Daerah
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-3"
+                            aria-labelledby="navbarDropdownDaerah">
+                            <li><a class="dropdown-item rounded-3 mb-1 active" href="sumatera.html">Sumatera</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="../jawa/jawa.html">Jawa</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="../bali-nusa-tenggara/bali-nusa-tenggara.html">Bali & Nusa Tenggara</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="../kalimantan/kalimantan.html">Kalimantan</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="../sulawesi/sulawesi.html">Sulawesi</a></li>
+                            <li><a class="dropdown-item rounded-3" href="../papua-maluku/papua-maluku.html">Papua & Maluku</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBudaya" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Warisan Budaya
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-3"
+                            aria-labelledby="navbarDropdownBudaya">
+                            <li><a class="dropdown-item rounded-3 mb-1" href="#">Adat & Tradisi</a></li>
+                            <li><a class="dropdown-item rounded-3 mb-1" href="#">Seni Pertunjukan</a></li>
+                            <li><a class="dropdown-item rounded-3" href="#">Kuliner Nusantara</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Agenda Festival</a></li>
+                    <!-- Visible only on mobile inside collapse -->
+                    <li class="nav-item d-lg-none mt-3">
+                        <a class="btn btn-premium text-dark border-dark" href="#provinsi">Jelajahi Sekarang</a>
+                    </li>
+                </ul>
+                <!-- Visible only on desktop -->
+                <div class="d-none d-lg-block">
+                    <a class="btn btn-premium" href="#provinsi">Jelajahi Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Banner - Rumah Gadang -->
+        <header class="sumatera-hero" id="sumatera-top">
+            <div class="sumatera-hero-overlay"></div>
+            <img src="../../img/gadang.png"
+                alt="Rumah Gadang - Sumatera Barat" class="sumatera-hero-img">
+            <div class="sumatera-hero-content">
+                <div class="sumatera-breadcrumb">
+                    <a href="../../index.html">Beranda</a>
+                    <span>/</span>
+                    <a href="#">Destinasi</a>
+                    <span>/</span>
+                    <span class="active">Sumatera</span>
+                </div>
+                <h1 class="sumatera-hero-title">Sumatera</h1>
+                <p class="sumatera-hero-subtitle">Pulau Kaya Budaya, Alam Megah & Warisan Tak Ternilai</p>
+                <div class="sumatera-hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>10 Provinsi</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-mountain"></i>
+                        <span>Alam Eksotis</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-theater-masks"></i>
+                        <span>Budaya Beragam</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Scroll Ke Bawah</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </header>
+
+        <!-- Province Grid Section -->
+        <section class="sumatera-provinces" id="provinsi">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-badge">Jelajahi Provinsi</span>
+                    <h2 class="section-title">Mari Kenali Lebih Dalam Wilayah Sumatera</h2>
+                    <p class="section-desc">Temukan 10 provinsi menakjubkan yang membentuk keindahan Pulau Sumatera</p>
+                </div>
+
+                <div class="province-grid">
+                    <!-- Aceh - Featured Large -->
+                    <div class="province-card province-wide" id="card-aceh">
+                        <img src="img/masjid.png"
+                            alt="Masjid Baiturrahman, Aceh">
+                        <div class="province-overlay">
+                            <div class="province-tag">Destinasi Unggulan</div>
+                            <h3 class="province-name">Aceh</h3>
+                            <p class="province-desc">Serambi Mekkah dengan Masjid Raya Baiturrahman yang megah dan keindahan alam Sabang.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Banda Aceh</span>
+                                <span><i class="fas fa-mosque"></i> Wisata Religi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sumatera Utara -->
+                    <div class="province-card" id="card-sumut">
+                        <img src="img/bolon.png"
+                            alt="Danau Toba, Sumatera Utara">
+                        <div class="province-overlay">
+                            <h3 class="province-name">Sumatera Utara</h3>
+                            <p class="province-desc">Rumah Danau Toba, danau vulkanik terbesar di Asia Tenggara.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Medan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sumatera Barat -->
+                    <div class="province-card" id="card-sumbar">
+                        <img src="../../img/gadang.png"
+                            alt="Rumah Gadang, Sumatera Barat">
+                        <div class="province-overlay">
+                            <h3 class="province-name">Sumatera Barat</h3>
+                            <p class="province-desc">Negeri Minangkabau dengan Rumah Gadang dan kuliner Rendang legendaris.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Padang</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Riau -->
+                    <div class="province-card" id="card-riau">
+                        <img src="img/istana siak.png"
+                            alt="Riau">
+                        <div class="province-overlay">
+                            <h3 class="province-name">Riau</h3>
+                            <p class="province-desc">Pusat budaya Melayu dengan Istana Siak yang megah dan alam yang asri.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Pekanbaru</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kepulauan Riau - Featured -->
+                    <div class="province-card province-wide" id="card-kepri">
+                        <img src="img/bunderan.png"
+                            alt="Kepulauan Riau">
+                        <div class="province-overlay">
+                            <div class="province-tag">Surga Bahari</div>
+                            <h3 class="province-name">Kepulauan Riau</h3>
+                            <p class="province-desc">Gugusan pulau eksotis dengan pantai berpasir putih dan laut kristal di perbatasan negara.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Tanjung Pinang</span>
+                                <span><i class="fas fa-umbrella-beach"></i> Wisata Bahari</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jambi -->
+                    <div class="province-card" id="card-jambi">
+                        <img src="img/candi.jpg"
+                            alt="Jambi">
+                        <div class="province-overlay">
+                            <h3 class="province-name">Jambi</h3>
+                            <p class="province-desc">Candi Muaro Jambi yang bersejarah dan Taman Nasional Kerinci Seblat.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Kota Jambi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sumatera Selatan -->
+                    <div class="province-card" id="card-sumsel">
+                        <img src="img/ampera.png"
+                            alt="Sumatera Selatan">
+                        <div class="province-overlay">
+                            <h3 class="province-name">Sumatera Selatan</h3>
+                            <p class="province-desc">Jembatan Ampera yang ikonik dan kekayaan kuliner khas Palembang.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Palembang</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bengkulu -->
+                    <div class="province-card" id="card-bengkulu">
+                        <img src="img/benteng.png"
+                            alt="Bengkulu">
+                        <div class="province-overlay">
+                            <h3 class="province-name">Bengkulu</h3>
+                            <p class="province-desc">Benteng Marlborough dan pesona Bunga Rafflesia yang mendunia.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Kota Bengkulu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lampung -->
+                    <div class="province-card" id="card-lampung">
+                        <img src="img/kiluan.jpg"
+                            alt="Lampung">
+                        <div class="province-overlay">
+                            <h3 class="province-name">Lampung</h3>
+                            <p class="province-desc">Pantai Kiluan yang memukau dan Taman Nasional Way Kambas.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Bandar Lampung</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bangka Belitung -->
+                    <div class="province-card" id="card-babel">
+                        <img src="img/granit.webp"
+                            alt="Bangka Belitung">
+                        <div class="province-overlay">
+                            <h3 class="province-name">Bangka Belitung</h3>
+                            <p class="province-desc">Batu granit raksasa di pantai biru yang menjadi ikon wisata Indonesia.</p>
+                            <div class="province-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Pangkal Pinang</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore Other Destinations -->
+        <section class="explore-other">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-badge">Destinasi Lain</span>
+                    <h2 class="section-title">Jelajahi Wilayah Indonesia Lainnya</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4 col-6">
+                        <a href="../jawa/jawa.html" class="other-dest-card" id="dest-jawa">
+                            <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=600&q=80" alt="Jawa">
+                            <div class="other-dest-overlay">
+                                <h4>Jawa</h4>
+                                <span>6 Provinsi</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <a href="../kalimantan/kalimantan.html" class="other-dest-card" id="dest-kalimantan">
+                            <img src="https://mediaindonesia.gumlet.io/news/2025/05/07/1746619376_d1ae384a93f30019c8b0.jpg?w=376&dpr=2.6" alt="Kalimantan">
+                            <div class="other-dest-overlay">
+                                <h4>Kalimantan</h4>
+                                <span>5 Provinsi</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <a href="../bali-nusa-tenggara/bali-nusa-tenggara.html" class="other-dest-card" id="dest-bali">
+                            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Bali & Nusa Tenggara">
+                            <div class="other-dest-overlay">
+                                <h4>Bali & Nusa Tenggara</h4>
+                                <span>3 Provinsi</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Brand Info -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="brand-circle me-3">
+                            <img src="../../img/logo.png" width="45px" height="45px" alt="">
+                        </div>
+                        <div>
+                            <h4 class="mb-0 fw-bold">TBON TRAVEL</h4>
+                            <small class="text-white-50">The Beauty Of Nusantara</small>
+                        </div>
+                    </div>
+                    <p class="text-white-50 lh-lg">Portal perjalanan terbaik untuk menjelajahi keindahan budaya dan alam
+                        Indonesia. Kami menghadirkan pengalaman tak terlupakan melalui warisan Nusantara yang autentik.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 mb-5 mb-lg-0 px-lg-5">
+                    <h5 class="fw-bold mb-4">Tautan Cepat</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="../../index.html">Beranda</a></li>
+                        <li><a href="#">Agenda Festival</a></li>
+                        <li><a href="#">Tentang Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Kontak</h5>
+                    <ul class="contact-info-list list-unstyled">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-map-marker-alt mt-1 me-3 text-accent-white"></i>
+                            <span class="text-white-50">Jl. Raya Nusantara No. 123, Jakarta Selatan, DKI Jakarta</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-phone-alt me-3 text-accent-white"></i>
+                            <span class="text-white-50">(021) 8888-9999</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-envelope me-3 text-accent-white"></i>
+                            <span class="text-white-50">info@tbon-travel.id</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-globe me-3 text-accent-white"></i>
+                            <span class="text-white-50">www.tbon-travel.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="copyright-bar mt-5 pt-4 d-flex justify-content-center align-items-center">
+                <p class="mb-0 text-white-50">&copy; 2026 TBON Nusantara Travel. Hak Cipta Dilindungi.</p>
+                <div style="width: 30px;"></div> <!-- Spacer for centering balance -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../../js/main.js"></script>
+    <script src="sumatera.js"></script>
+</body>
+
+</html>
