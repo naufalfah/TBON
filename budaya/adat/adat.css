@@ -236,4 +236,12 @@
     .section-title {
         font-size: 2rem;
     }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-header {
+        justify-content: center;
+    }
 }
