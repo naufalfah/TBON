@@ -190,125 +190,10 @@
     margin: 0 auto;
 }
 
-/* --- Province Grid --- */
+
 .kalimantan-provinces {
     padding: 50px 0;
     background: white;
-}
-
-.province-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.province-card {
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    aspect-ratio: 1 / 1;
-    cursor: pointer;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.province-card.province-wide {
-    grid-column: span 3;
-    aspect-ratio: 3 / 1;
-}
-
-.province-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.province-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
-}
-
-.province-card:hover img {
-    transform: scale(1.1);
-}
-
-.province-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 30px;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.85) 0%,
-        rgba(0, 0, 0, 0.5) 50%,
-        transparent 100%
-    );
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 65%;
-}
-
-.province-tag {
-    display: inline-block;
-    padding: 5px 14px;
-    background: rgba(212, 175, 55, 0.85);
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    border-radius: 50px;
-    margin-bottom: 12px;
-    width: fit-content;
-    backdrop-filter: blur(5px);
-}
-
-.province-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 6px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.province-desc {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.5;
-    margin-bottom: 8px;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.4s ease 0.1s;
-}
-
-.province-card:hover .province-desc {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.province-meta {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.65);
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.4s ease 0.2s;
-}
-
-.province-card:hover .province-meta {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.province-meta i {
-    color: #D4AF37;
-    margin-right: 4px;
 }
 
 /* --- Explore Other Destinations --- */
@@ -370,12 +255,7 @@
    RESPONSIVE
    ============================================ */
 
-@media (max-width: 1200px) {
-    .province-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-    }
-}
+
 
 @media (max-width: 991px) {
     .kalimantan-hero-title {
@@ -401,29 +281,6 @@
         padding: 40px 0;
     }
 
-    .province-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .province-card.province-wide {
-        grid-column: span 2;
-        aspect-ratio: 2 / 1;
-    }
-
-    .province-name {
-        font-size: 1.3rem;
-    }
-
-    .province-desc {
-        opacity: 1;
-        transform: none;
-    }
-
-    .province-meta {
-        opacity: 1;
-        transform: none;
-    }
-
     .explore-other {
         padding: 70px 0;
     }
@@ -434,10 +291,6 @@
 }
 
 @media (max-width: 768px) {
-    .province-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
 
     .kalimantan-hero-title {
         font-size: 2.8rem;
@@ -482,23 +335,6 @@
     .section-badge {
         font-size: 0.7rem;
         padding: 6px 16px;
-    }
-
-    .province-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    .province-card {
-        border-radius: 12px;
-    }
-
-    .province-name {
-        font-size: 1.1rem;
-    }
-
-    .province-overlay {
-        padding: 20px;
     }
 
     .other-dest-card {
