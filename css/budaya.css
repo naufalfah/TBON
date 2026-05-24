@@ -1,8 +1,6 @@
-/* ============================================
-   WARISAN BUDAYA PAGE - Shared Styles
-   ============================================ */
 
-/* --- Hero Banner --- */
+
+
 .hero {
     position: relative;
     height: 100vh;
@@ -77,7 +75,7 @@
     margin-bottom: 30px;
 }
 
-/* --- Theme gold (Adat & Seni) --- */
+
 body.theme-gold .hero-tag {
     background: rgba(212, 175, 55, 0.2);
     color: #D4AF37;
@@ -89,7 +87,7 @@ body.theme-gold .section-badge {
     color: #56BE97;
 }
 
-/* --- Theme rose (Kuliner) --- */
+
 body.theme-rose .hero-tag {
     background: rgba(225, 29, 72, 0.2);
     color: #f43f5e;
@@ -101,7 +99,7 @@ body.theme-rose .section-badge {
     color: #e11d48;
 }
 
-/* --- Main Section --- */
+
 .budaya-section {
     padding: 80px 0;
     background-color: #f8fafc;
@@ -134,7 +132,7 @@ body.theme-rose .section-badge {
     line-height: 1.7;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 991px) {
     .hero-title {
         font-size: 3.5rem;

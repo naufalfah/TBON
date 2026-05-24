@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
-            if (href === '#' || !href) return; // skip dropdown toggles
+            if (href === '#' || !href) return; 
             e.preventDefault();
             const target = document.querySelector(href);
             if (target) {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     top: targetPosition,
                     behavior: 'smooth'
                 });
-                // Close mobile navbar if open
+                
                 const navbarCollapse = document.querySelector('.navbar-collapse.show');
                 if (navbarCollapse) {
                     const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);

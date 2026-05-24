@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Intersection Observer for entrance animations
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-    // Province cards - staggered entrance
+    
     document.querySelectorAll('.province-card').forEach((card, index) => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(40px)';
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // Other destination cards - staggered entrance
+    
     document.querySelectorAll('.other-dest-card').forEach((card, index) => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(30px)';
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // Parallax effect on hero banner
+    
     const heroImg = document.querySelector('.daerah-hero-img');
     if (heroImg) {
         const hero = document.querySelector('.daerah-hero');
